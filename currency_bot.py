@@ -149,7 +149,6 @@ def main() -> None:
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CallbackQueryHandler(handle_button))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, rate))
-    application.add_handler(CommandHandler("ilia_pipiska_and_krevetka", get_visits_data))
 
     application.run_polling()
 
